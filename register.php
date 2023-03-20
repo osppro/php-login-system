@@ -1,3 +1,4 @@
+<?php include 'config/config.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,25 +31,25 @@
 			 			<form method="POST" action="">
 			 				<div class="form-group">
 			 					<label>Firstname</label>
-			 					<input type="text" class="form-control" name="firstname" placeholder="Enter Firstname">
+			 					<input type="text" class="form-control" required name="firstname" placeholder="Enter Firstname">
 			 				</div>
 
 			 				<div class="form-group">
 			 					<label>Lastname</label>
-			 					<input type="text" class="form-control" name="lastname" placeholder="Enter Lastname">
+			 					<input type="text" class="form-control" required name="lastname" placeholder="Enter Lastname">
 			 				</div>
 
 			 				<div class="form-group">
 			 					<label>Email</label>
-			 					<input type="email" class="form-control" name="email" placeholder="Enter Email">
+			 					<input type="email" class="form-control" required name="email" placeholder="Enter Email">
 			 				</div>
 
 			 				<div class="form-group">
 			 					<label>Password</label>
-			 					<input type="password" class="form-control" name="password" placeholder="Enter Password">
+			 					<input type="password" class="form-control" required name="password" placeholder="Enter Password">
 			 				</div>
 			 				<div class="form-group">
-			 					<button class="btn btn-primary" type="submit" name="login_btn">Register</button>
+			 					<button class="btn btn-primary" type="submit" name="register_btn">Register</button>
 			 				</div>
 			 				<p>Already a member ? <a href="./">Login</a></p>
 			 			</form>
