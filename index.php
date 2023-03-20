@@ -7,9 +7,18 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
-	<div class="row">
-		<div class="col-md-12">
-			 <h2 class="well text-center">Login Form</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h4></h4>
+				</div>
+				<div class="col-md-4">
+					<h2 class="well text-center">Login Form</h2>
+				</div>
+				<div class="col-md-4">
+					<h4></h4>
+				</div>
+			</div>
 
 			 <div class="row">
 			 	<div class="container">
@@ -19,15 +28,6 @@
 			 		<!-- `id`, `firstname`, `lastname`, `email`, `password` -->
 			 		<div class="col-md-4 well">
 			 			<form method="POST" action="">
-			 				<div class="form-group">
-			 					<label>Firstname</label>
-			 					<input type="text" class="form-control" name="firstname" placeholder="Enter Firstname">
-			 				</div>
-
-			 				<div class="form-group">
-			 					<label>Lastname</label>
-			 					<input type="text" class="form-control" name="lastname" placeholder="Enter Lastname">
-			 				</div>
 
 			 				<div class="form-group">
 			 					<label>Email</label>
@@ -41,6 +41,7 @@
 			 				<div class="form-group">
 			 					<button class="btn btn-primary" type="submit" name="login_btn">Login</button>
 			 				</div>
+			 				<p>Not yet a member ? <a href="register.php">Register</a></p>
 			 			</form>
 			 		</div>
 			 		<div class="col-md-4">
@@ -49,6 +50,5 @@
 			 	</div>
 			 </div>
 		</div>
-	</div>
 </body>
 </html>
