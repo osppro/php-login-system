@@ -38,6 +38,9 @@
 			 					<label>Password</label>
 			 					<input type="password" class="form-control" name="password" placeholder="Enter Password">
 			 				</div>
+			 				<div class="form-group">
+			 					<button class="btn btn-primary" type="submit" name="login_btn">Login</button>
+			 				</div>
 			 			</form>
 			 		</div>
 			 		<div class="col-md-4">
