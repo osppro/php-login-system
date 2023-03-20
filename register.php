@@ -29,6 +29,10 @@
 			 		<!-- `id`, `firstname`, `lastname`, `email`, `password` -->
 			 		<div class="col-md-4 well">
 			 			<form method="POST" action="">
+			 				<?php if (isset($_SESSION['status'])) {
+			 					echo $_SESSION['status'];
+			 					unset($_SESSION['status']);
+			 				} ?>
 			 				<div class="form-group">
 			 					<label>Firstname</label>
 			 					<input type="text" class="form-control" required name="firstname" placeholder="Enter Firstname">

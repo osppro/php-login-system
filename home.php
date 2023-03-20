@@ -1,4 +1,9 @@
-<?php include 'config/config.php'; ?>
+<?php 
+include 'config/config.php';
+if (empty($_SESSION['id'])) {
+	header("Location: ./");
+}
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +19,8 @@
 					<h4></h4>
 				</div>
 				<div class="col-md-4">
-					<h2 class="well text-center">Hi, Flavia</h2>
+					<h2 class="well text-center">Hi, <?=ucwords($_SESSION['firstname'].' '.$_SESSION['lastname']); ?></h2>
+					<p>Email: <?=$_SESSION['email']; ?></p>
 					<a href="logout.php">Logout</a>
 				</div>
 				<div class="col-md-4">
